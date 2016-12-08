@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="50dp"
+        >
+    </FrameLayout>
+
+    <View
+        android:id="@+id/main_div_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.000005dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dip"
+        android:background="@color/border_color" />
+
+    <LinearLayout
+        android:id="@+id/layout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_customemenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_exchange"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/listview_item_bg_noborder"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="btnShowExchange_Click"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ep_tab_his_normal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.05dip"
+                android:layout_height="fill_parent"
+                android:background="@color/border_color" />
+
+            <LinearLayout
+                android:id="@+id/layout_custommenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
